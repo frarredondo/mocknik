@@ -1,0 +1,31 @@
+{
+  "name": "anon-form-filler",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome MV3 extension that fills forms with fake data, with configurable overrides.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "e2e": "npm run build && playwright test",
+    "e2e:ui": "npm run build && playwright test --ui",
+    "icons": "node scripts/generate-icons.mjs",
+    "package": "npm run build && node scripts/package.mjs",
+    "store:assets": "npm run build && node scripts/capture-store-assets.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/chrome": "^0.2.9",
+    "@types/node": "^22.20.2",
+    "@vitest/coverage-v8": "^5.0.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^30.0.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  }
+}

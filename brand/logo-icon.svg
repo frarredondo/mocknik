@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Mocknik">
+  <rect x="24" y="24" width="464" height="464" rx="116" fill="#14213d"/>
+  <path d="M230 112 Q230 230 348 230 Q230 230 230 348 Q230 230 112 230 Q230 230 230 112 Z" fill="#fca311"/>
+  <path d="M366 300 Q366 352 418 352 Q366 352 366 404 Q366 352 314 352 Q366 352 366 300 Z" fill="#ffffff"/>
+</svg>

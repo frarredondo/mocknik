@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 420" width="1500" height="420" role="img" aria-label="Mocknik">
+  <g transform="translate(6,10) scale(0.78)">
+    <rect x="56" y="56" width="400" height="400" rx="72" fill="currentColor"/>
+    <circle cx="112" cy="120" r="11" fill="currentColor"/>
+    <circle cx="152" cy="120" r="11" fill="currentColor"/>
+    <circle cx="192" cy="120" r="11" fill="currentColor"/>
+    <rect x="100" y="164" width="312" height="248" rx="26" fill="currentColor"/>
+    <circle cx="136" cy="205" r="12" fill="currentColor"/>
+    <path d="M116 240 a20 20 0 0 1 40 0 z" fill="currentColor"/>
+    <rect x="180" y="195" width="200" height="24" rx="12" fill="currentColor"/>
+    <rect x="120" y="257" width="32" height="24" rx="5" fill="currentColor"/>
+    <path d="M124 262 l12 9 l12 -9" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="180" y="257" width="200" height="24" rx="12" fill="currentColor"/>
+    <path d="M136 316 a16 16 0 0 1 16 16 c0 12 -16 28 -16 28 s-16 -16 -16 -28 a16 16 0 0 1 16 -16 z" fill="currentColor"/>
+    <circle cx="136" cy="332" r="6" fill="currentColor"/>
+    <rect x="180" y="319" width="200" height="24" rx="12" fill="currentColor"/>
+    <rect x="100" y="360" width="252" height="44" rx="14" fill="currentColor"/>
+    <path d="M138 368 Q138 382 152 382 Q138 382 138 396 Q138 382 124 382 Q138 382 138 368 Z" fill="currentColor"/>
+    <rect x="168" y="376" width="150" height="12" rx="6" fill="currentColor"/>
+    <g transform="translate(300,326) rotate(-6)">
+      <path d="M0 0 L0 52 L14 40 L24 62 L38 55 L28 34 L46 34 Z" fill="currentColor" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+    <path d="M446 196 Q446 240 490 240 Q446 240 446 284 Q446 240 402 240 Q446 240 446 196 Z" fill="currentColor"/>
+    <path d="M470 296 Q470 320 494 320 Q470 320 470 344 Q470 320 446 320 Q470 320 470 296 Z" fill="currentColor"/>
+    <path d="M398 314 L424 314" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+    <path d="M390 338 L420 338" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="425" y="296" font-family="Inter, 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="208" letter-spacing="-6" fill="currentColor">Mocknik</text>
+</svg>

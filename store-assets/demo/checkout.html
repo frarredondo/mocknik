@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout · Acme</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body class="page-checkout">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">A</span>Acme</a>
+      <nav class="topnav">
+        <a href="#">Store</a>
+        <a href="#">Licenses</a>
+        <a href="#">Support</a>
+      </nav>
+      <span class="spacer"></span>
+      <span class="secure-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="10" width="16" height="11" rx="2"></rect>
+          <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+        </svg>
+        Secure checkout
+      </span>
+    </header>
+
+    <main class="checkout">
+      <section class="checkout-main">
+        <h2>Checkout</h2>
+        <p class="sub">You are buying the Acme Pro annual license. Fictional demo data only.</p>
+
+        <form class="checkout-form" novalidate>
+          <section class="panel">
+            <h3>Contact information</h3>
+            <div class="grid-2">
+              <label class="field">
+                <span class="field-label">Full name</span>
+                <input id="full-name" name="full_name" type="text" autocomplete="name" placeholder="Jane Doe" />
+              </label>
+              <label class="field">
+                <span class="field-label">Email</span>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" />
+              </label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Shipping details</h3>
+            <div class="grid-2">
+              <label class="field span-2">
+                <span class="field-label">Address</span>
+                <input id="address" name="address" type="text" autocomplete="street-address" placeholder="123 Market Street, Apt 4B" />
+              </label>
+              <label class="field">
+                <span class="field-label">City</span>
+                <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="San Francisco" />
+              </label>
+              <label class="field">
+                <span class="field-label">ZIP / Postal code</span>
+                <input id="zip" name="zip" type="text" autocomplete="postal-code" placeholder="94103" />
+              </label>
+              <label class="field">
+                <span class="field-label">Quantity</span>
+                <input id="quantity" name="quantity" type="number" min="1" max="9" value="1" />
+              </label>
+              <label class="field">
+                <span class="field-label">Delivery date</span>
+                <input id="delivery-date" name="delivery_date" type="date" />
+              </label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Payment</h3>
+            <div class="grid-2">
+              <label class="field span-2">
+                <span class="field-label">Card number</span>
+                <input id="card-number" name="card_number" type="text" inputmode="numeric" maxlength="19" autocomplete="cc-number" placeholder="4242 4242 4242 4242" />
+              </label>
+            </div>
+          </section>
+
+          <section class="panel">
+            <h3>Order notes</h3>
+            <label class="field">
+              <span class="field-label">Notes for the courier</span>
+              <textarea id="notes" name="notes" rows="2" placeholder="Leave at the front desk"></textarea>
+            </label>
+          </section>
+        </form>
+      </section>
+
+      <aside class="summary">
+        <h3>Order summary</h3>
+        <div class="summary-item">
+          <span>Acme Pro — annual license</span>
+          <strong>$120.00</strong>
+        </div>
+        <div class="summary-item">
+          <span>Quantity</span>
+          <strong id="summary-qty">1</strong>
+        </div>
+        <div class="summary-item">
+          <span>Shipping</span>
+          <strong>Free</strong>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <strong id="summary-total">$120.00</strong>
+        </div>
+        <button class="place-order" type="button">Place order</button>
+        <p class="secure-note">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="10" width="16" height="11" rx="2"></rect>
+            <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+          </svg>
+          This is a fictional demo. No payment is processed.
+        </p>
+      </aside>
+    </main>
+
+    <script>
+      const quantity = document.getElementById('quantity');
+      const summaryQty = document.getElementById('summary-qty');
+      const summaryTotal = document.getElementById('summary-total');
+      const syncSummary = () => {
+        const parsed = Number(quantity.value);
+        const count = Number.isFinite(parsed) ? Math.min(9, Math.max(1, Math.round(parsed))) : 1;
+        summaryQty.textContent = String(count);
+        summaryTotal.textContent = `$${(count * 120).toFixed(2)}`;
+      };
+      quantity.addEventListener('input', syncSummary);
+      quantity.addEventListener('change', syncSummary);
+      syncSummary();
+    </script>
+  </body>
+</html>

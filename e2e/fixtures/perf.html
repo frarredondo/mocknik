@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Performance fixture</title>
+  </head>
+  <body>
+    <h1>Performance</h1>
+    <form id="perf-form"></form>
+    <script>
+      (function () {
+        var form = document.getElementById('perf-form');
+        var fragment = document.createDocumentFragment();
+        for (var index = 0; index < 500; index += 1) {
+          var input = document.createElement('input');
+          input.type = 'text';
+          input.id = 'perf-' + index;
+          input.name = 'perf-' + index;
+          fragment.appendChild(input);
+        }
+        form.appendChild(fragment);
+      })();
+    </script>
+  </body>
+</html>

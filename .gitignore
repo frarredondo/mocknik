@@ -1,0 +1,25 @@
+# Planning documents are never version-controlled.
+plans/
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+release/
+*.tsbuildinfo
+
+# Test artifacts
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create your account · Acme</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body class="page-signup">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">A</span>Acme</a>
+      <nav class="topnav">
+        <a href="#">Product</a>
+        <a href="#">Solutions</a>
+        <a href="#">Pricing</a>
+        <a href="#">Docs</a>
+      </nav>
+      <span class="spacer"></span>
+      <a class="ghost-button" href="#">Sign in</a>
+    </header>
+
+    <main class="signup">
+      <aside class="promo-panel">
+        <div>
+          <p class="eyebrow">Acme Cloud</p>
+          <h1>Ship faster with a workspace your team can trust.</h1>
+          <p class="panel-copy">
+            Projects, environments, and observability in one place. Free for 14 days — no credit
+            card required.
+          </p>
+          <ul class="benefits">
+            <li><span class="tick"></span>Unlimited projects and environments</li>
+            <li><span class="tick"></span>Role-based access for every teammate</li>
+            <li><span class="tick"></span>Audit logs and SSO on every plan</li>
+          </ul>
+        </div>
+        <blockquote>
+          “Acme took our release process from hours to minutes.”
+          <cite>Dana R. — Platform Lead, Northwind Labs</cite>
+        </blockquote>
+      </aside>
+
+      <section class="form-panel">
+        <div class="form-inner">
+          <h2>Create your Acme account</h2>
+          <p class="sub">Already have an account? <a href="#">Sign in</a></p>
+
+          <form class="signup-form" novalidate>
+            <label class="field">
+              <span class="field-label">First name</span>
+              <input id="first-name" name="first_name" type="text" autocomplete="given-name" placeholder="Jane" />
+            </label>
+            <label class="field">
+              <span class="field-label">Last name</span>
+              <input id="last-name" name="last_name" type="text" autocomplete="family-name" placeholder="Doe" />
+            </label>
+
+            <label class="field span-2">
+              <span class="field-label">Work email</span>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" />
+            </label>
+
+            <div class="field">
+              <label class="field-label" for="password">Password</label>
+              <span class="input-wrap">
+                <input id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 10 characters" />
+                <button class="reveal" type="button" data-reveal="password" aria-label="Show password">Show</button>
+              </span>
+            </div>
+            <div class="field">
+              <label class="field-label" for="confirm-password">Confirm password</label>
+              <span class="input-wrap">
+                <input id="confirm-password" name="confirm_password" type="password" autocomplete="new-password" placeholder="Repeat password" />
+                <button class="reveal" type="button" data-reveal="confirm-password" aria-label="Show password">Show</button>
+              </span>
+            </div>
+
+            <label class="field">
+              <span class="field-label">Phone number</span>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 (555) 000-0000" />
+            </label>
+            <label class="field">
+              <span class="field-label">Date of birth</span>
+              <input id="date-of-birth" name="date_of_birth" type="date" />
+            </label>
+
+            <label class="field span-2">
+              <span class="field-label">Country</span>
+              <select id="country" name="country">
+                <option value="" disabled selected>Select your country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="gb">United Kingdom</option>
+                <option value="de">Germany</option>
+                <option value="pt">Portugal</option>
+                <option value="es">Spain</option>
+                <option value="au">Australia</option>
+              </select>
+            </label>
+
+            <div class="checkboxes">
+              <label class="check">
+                <input id="newsletter" name="newsletter" type="checkbox" />
+                <span>Send me product updates and occasional tips.</span>
+              </label>
+              <label class="check">
+                <input id="terms" name="terms" type="checkbox" />
+                <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</span>
+              </label>
+            </div>
+
+            <button class="submit" type="submit">Create account</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelectorAll('.reveal').forEach((button) => {
+        button.addEventListener('click', () => {
+          const input = document.getElementById(button.dataset.reveal);
+          if (!input) return;
+          const show = input.type === 'password';
+          input.type = show ? 'text' : 'password';
+          button.textContent = show ? 'Hide' : 'Show';
+          button.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
+        });
+      });
+    </script>
+  </body>
+</html>

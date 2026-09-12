@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 790" width="820" height="790" role="img" aria-label="Mocknik">
+  <g transform="translate(154,20)">
+    <rect x="56" y="56" width="400" height="400" rx="72" fill="#14213d"/>
+    <circle cx="112" cy="120" r="11" fill="#fca311"/>
+    <circle cx="152" cy="120" r="11" fill="#e5e5e5"/>
+    <circle cx="192" cy="120" r="11" fill="#ffffff"/>
+    <rect x="100" y="164" width="312" height="248" rx="26" fill="#ffffff"/>
+    <circle cx="136" cy="205" r="12" fill="#14213d"/>
+    <path d="M116 240 a20 20 0 0 1 40 0 z" fill="#14213d"/>
+    <rect x="180" y="195" width="200" height="24" rx="12" fill="#e5e5e5"/>
+    <rect x="120" y="257" width="32" height="24" rx="5" fill="#14213d"/>
+    <path d="M124 262 l12 9 l12 -9" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="180" y="257" width="200" height="24" rx="12" fill="#e5e5e5"/>
+    <path d="M136 316 a16 16 0 0 1 16 16 c0 12 -16 28 -16 28 s-16 -16 -16 -28 a16 16 0 0 1 16 -16 z" fill="#14213d"/>
+    <circle cx="136" cy="332" r="6" fill="#ffffff"/>
+    <rect x="180" y="319" width="200" height="24" rx="12" fill="#e5e5e5"/>
+    <rect x="100" y="360" width="252" height="44" rx="14" fill="#fca311"/>
+    <path d="M138 368 Q138 382 152 382 Q138 382 138 396 Q138 382 124 382 Q138 382 138 368 Z" fill="#ffffff"/>
+    <rect x="168" y="376" width="150" height="12" rx="6" fill="#ffffff"/>
+    <g transform="translate(300,326) rotate(-6)">
+      <path d="M0 0 L0 52 L14 40 L24 62 L38 55 L28 34 L46 34 Z" fill="#14213d" stroke="#ffffff" stroke-width="5" stroke-linejoin="round"/>
+    </g>
+    <path d="M446 196 Q446 240 490 240 Q446 240 446 284 Q446 240 402 240 Q446 240 446 196 Z" fill="#fca311"/>
+    <path d="M470 296 Q470 320 494 320 Q470 320 470 344 Q470 320 446 320 Q470 320 470 296 Z" fill="#fca311"/>
+    <path d="M398 314 L424 314" stroke="#fca311" stroke-width="9" stroke-linecap="round"/>
+    <path d="M390 338 L420 338" stroke="#fca311" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text x="410" y="730" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="168" letter-spacing="-4">
+    <tspan fill="#14213d">Mock</tspan><tspan fill="#fca311">nik</tspan>
+  </text>
+</svg>

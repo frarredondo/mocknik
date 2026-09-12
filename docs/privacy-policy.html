@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Mocknik</title>
+  <meta name="description" content="Privacy policy for the Mocknik browser extension.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #000000;
+      --muted: rgba(20, 33, 61, 0.72);
+      --rule: #e5e5e5;
+      --accent: #14213d;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --fg: #ffffff;
+        --muted: #e5e5e5;
+        --rule: rgba(255, 255, 255, 0.18);
+        --accent: #fca311;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    main { max-width: 42rem; margin: 0 auto; }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 0.25rem; }
+    h2 {
+      font-size: 1.2rem;
+      margin: 2rem 0 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+    }
+    p, li { margin: 0.5rem 0; }
+    ul { padding-left: 1.25rem; }
+    .meta { color: var(--muted); margin: 0 0 1.5rem; }
+    .meta strong { color: var(--fg); }
+    a { color: var(--accent); }
+    footer { margin-top: 2.5rem; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy — Mocknik</h1>
+    <p class="meta"><strong>Effective date:</strong> September 13, 2026<br>
+      Applies to the <strong>Mocknik</strong> browser extension.</p>
+
+    <h2>What the extension does</h2>
+    <p>Mocknik is a Chrome extension that fills web forms on pages you visit with randomly generated fake data, using rules and preferences you configure.</p>
+
+    <h2>Data we collect: none</h2>
+    <p>We do not collect, transmit, sell, or share any personal data. Precisely what happens inside your browser:</p>
+    <ul>
+      <li><strong>Page content and form field values.</strong> The extension reads the form fields on the pages you visit — for example field type, name, ID, label, and placeholder text — and writes generated values into them. This happens locally in your browser, in memory, and only to fill the forms you ask it to fill. Page content is not stored or sent anywhere.</li>
+      <li><strong>Settings.</strong> Your rules, ignored domains, and other preferences are stored locally on your device using <code>chrome.storage.local</code> under the <code>settings</code> key. They never leave your browser.</li>
+      <li><strong>No accounts.</strong> There is no sign-in, no user account, and no profile system.</li>
+      <li><strong>No analytics, cookies, or tracking.</strong> The extension contains no analytics, telemetry, tracking pixels, or advertising. It sets no cookies and does not track your browsing.</li>
+      <li><strong>No transmission.</strong> The extension makes no network requests. No data is sent to us or to any third party.</li>
+    </ul>
+    <p>Settings you export from the options page (for example, as JSON) are created on your device only when you ask for them, and they stay on your device.</p>
+
+    <h2>Permissions</h2>
+    <p>The extension requests only the permissions it needs to work:</p>
+    <ul>
+      <li><strong><code>storage</code></strong> — to save your settings locally in your browser.</li>
+      <li><strong><code>contextMenus</code></strong> — to add the "Fill all inputs", "Fill this form", and "Fill this input" items to Chrome's right-click menu.</li>
+      <li><strong>Content script access on all sites</strong> — declared for <code>&lt;all_urls&gt;</code>, in all frames. This is what lets the extension find and fill forms on whatever page you are viewing. It is used only for that purpose: reading form fields and writing fake values into them when you trigger a fill. It does not run in the background to collect or transmit anything.</li>
+    </ul>
+
+    <h2>Third parties</h2>
+    <p>None. The extension includes no third-party analytics, advertising, or tracking services, and shares data with no one.</p>
+
+    <h2>Data retention</h2>
+    <p>Settings remain on your device until you change or delete them, or uninstall the extension. Uninstalling the extension removes its local data.</p>
+
+    <h2>Security</h2>
+    <p>All extension code is bundled in the package you install. The extension does not download or execute remote code, and it runs under Chrome's Manifest V3 security model.</p>
+
+    <h2>Children's privacy</h2>
+    <p>The extension is not directed at children and collects no personal information from anyone, including children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted at this same URL with a new effective date. Material changes will also be noted in the extension's Chrome Web Store listing or release notes. Continuing to use the extension after an update means you accept the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:frarredo+mocknik@gmail.com">frarredo+mocknik@gmail.com</a>.</p>
+
+    <footer>
+      <p>Mocknik. This page has no scripts, no stylesheets from external hosts, and no tracking.</p>
+    </footer>
+  </main>
+</body>
+</html>
