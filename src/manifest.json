@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Mocknik — Fake Form Filler",
   "short_name": "Mocknik",
-  "version": "0.1.0",
-  "description": "Fill forms with fake data, with configurable overrides.",
+  "version": "0.1.1",
+  "description": "Fill any web form with fake data in one click. Local-only, no network, with per-field rules for fixed values, templates, mirrors.",
   "icons": {
     "16": "icons/icon-16.png",
     "48": "icons/icon-48.png",

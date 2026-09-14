@@ -450,14 +450,14 @@ function smallTileHtml(iconUri) {
       }
       .icon { width: 58px; height: 58px; border-radius: 16px; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45); }
       h1 { font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; }
-      p { font-size: 14.5px; line-height: 1.4; color: ${palette.alabaster}; }
+      p { font-size: 17px; line-height: 1.35; color: ${palette.alabaster}; }
       .pill {
         margin-top: 3px;
         padding: 5px 12px;
         border: 1px solid ${palette.orange}80;
         border-radius: 999px;
         color: ${palette.orange};
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 700;
         letter-spacing: 0.09em;
         text-transform: uppercase;

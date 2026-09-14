@@ -10,44 +10,62 @@ Submission copy for the Chrome Web Store.
 - **Category:** Developer Tools
 - **Language:** English
 - **Website:** https://github.com/frarredondo/mocknik
+- **Support URL:** https://github.com/frarredondo/mocknik/issues
 - **Support email:** frarredo+mocknik@gmail.com
 - **Privacy policy URL:** https://frarredondo.github.io/mocknik/privacy-policy.html
 
 ## Summary (132 characters max)
 
+This text must live in the manifest `description` field — the Chrome Web Store
+uses it as the listing summary. There is no separate summary field in the
+dashboard, and it cannot be changed after upload without a version bump.
+
 > Fill any web form with fake data in one click. Local-only, no network, with per-field rules for fixed values, templates, mirrors.
 
 ## Detailed description
 
-> **Fake data. Real progress.**
+> Stop typing the same dummy data into the same forms.
 >
-> Mocknik fills web forms with realistic fake data so you can build, test, and
-> ship faster. Designed for developers and QA teams who type the same dummy
-> values into the same forms every day.
+> Mocknik fills web forms with realistic fake data in one click, so you can test
+> sign-ups, checkouts, logins, onboarding flows, and any other flow without
+> wasting time on manual entry. It's built for developers, QA engineers, and
+> testers who do this dozens of times a day.
 >
-> **One click, every field.** Trigger a fill from the toolbar button, keyboard
-> shortcuts (`Alt+Shift+F` for all inputs, `Alt+Shift+G` for the current form,
-> `Alt+Shift+H` for the focused input), or the right-click menu. Mocknik
-> classifies each field and generates a fitting value: names, emails, phone
-> numbers, passwords, dates, numbers, choices, checkboxes, and more.
+> HOW IT WORKS
+> Click the toolbar button, press Alt+Shift+F (all fields), Alt+Shift+G (the
+> current form), or Alt+Shift+H (the focused field), or use the right-click
+> menu. Mocknik inspects every eligible field, works out what it expects — first
+> name, last name, email, phone, password, date, address, quantity, card number,
+> and more — and writes a fitting value. Confirm-password fields are mirrored
+> automatically, captchas are left alone, and framework-bound inputs (React,
+> Vue, Angular, Svelte) update correctly because input, change, and blur events
+> are dispatched after filling.
 >
-> **Rules that match how you test.** Pin exact values with literal overrides,
-> mirror confirm-password fields automatically, generate values from your own
-> lists, use alphanumeric templates, or skip fields entirely. Rules are matched
-> by `name`, `id`, `label`, `placeholder`, `aria-label`, `autocomplete`, and
-> more, then resolved most-specific-first, so overrides always win. Import and
-> export the whole rule set as JSON.
+> RULES THAT MATCH HOW YOU TEST
+> Every field is resolved against your rules, most specific first:
+> - Pin exact values: always use the same test email or account ID
+> - Generate from templates: order codes like XX-1234
+> - Randomise from your own lists: countries, plans, products
+> - Mirror confirm-password fields automatically
+> - Skip fields entirely: captchas, file uploads, anything you don't want touched
 >
-> **Private by design.** Everything runs locally in your browser. No accounts,
-> no cloud sync, no network requests, no telemetry. Settings live in
-> `chrome.storage.local` on your device, and page content is processed in
-> memory only to fill the forms you trigger.
+> Add, edit, reorder, and delete rules in the options page, and export or import
+> everything as JSON to share test setups with your team.
 >
-> **Works with modern frameworks.** After filling, Mocknik dispatches `input`,
-> `change`, and `blur` events so React, Vue, Angular, Svelte, and other
-> framework-bound forms pick up the new values.
+> PRIVATE BY DESIGN
+> Everything runs locally in your browser. There are no accounts, no cloud sync,
+> no profiles, and no network requests. Page content is processed in memory only
+> to fill the fields you trigger, and your rules stay in local browser storage.
+> No telemetry, no tracking, no data collection — ever.
 >
-> Build. Test. Ship.
+> WHY INSTALL MOCKNIK?
+> - Fill an entire page in one click instead of typing for minutes
+> - Get deterministic, repeatable test data with per-field rules
+> - Test validation, error states, and edge cases with realistic values
+> - Keep test environments free of your real personal data
+> - Works offline — nothing leaves your machine
+>
+> Free and open source (MIT). Requires Chrome or Chromium with Manifest V3.
 
 ## Single purpose
 
