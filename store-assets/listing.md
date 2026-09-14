@@ -1,7 +1,6 @@
 # Mocknik — Chrome Web Store listing
 
-Submission copy for the Chrome Web Store. Values marked **[verify]** must be
-confirmed against the built package before submitting.
+Submission copy for the Chrome Web Store.
 
 ## Identity
 
@@ -10,11 +9,9 @@ confirmed against the built package before submitting.
 - **Tagline:** Fake data. Real progress.
 - **Category:** Developer Tools
 - **Language:** English
-- **Website:** [to host] — the GitHub repo is private, so a public URL must be
-  provided here (a hosted landing page, or make the repo public)
+- **Website:** https://github.com/frarredondo/mocknik
 - **Support email:** frarredo+mocknik@gmail.com
-- **Privacy policy URL:** [to host] — publish `docs/privacy-policy.html` (a
-  single self-contained file) anywhere public and paste the URL here
+- **Privacy policy URL:** https://frarredondo.github.io/mocknik/privacy-policy.html
 
 ## Summary (132 characters max)
 
@@ -104,7 +101,7 @@ No account or credentials are needed. To verify the core flow:
 - [ ] Confirm the name against the Web Store search UI and run a USPTO XSearch
       (classes 9/42) plus an attorney clearance search.
 - [x] Fill in the support email, privacy policy contact email, and effective date.
-- [ ] Host `docs/privacy-policy.html` at a public URL and copy it into the
+- [x] Host `docs/privacy-policy.html` at a public URL and copy it into the
       Website and Privacy policy URL fields.
 - [ ] Regenerate assets: `npm run icons && npm run store:assets`.
 - [ ] Build the submission ZIP: `npm run package` (writes
